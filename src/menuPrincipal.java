@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class vehiculos {
+public class menuPrincipal {
     private javax.swing.JPanel JPanel;
     private JLabel numeracion;
     private JLabel marca;
@@ -14,7 +14,7 @@ public class vehiculos {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("vehiculos");
-        frame.setContentPane(new vehiculos().JPanel);
+        frame.setContentPane(new menuPrincipal().JPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
