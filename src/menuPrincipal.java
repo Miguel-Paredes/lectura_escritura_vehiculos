@@ -21,13 +21,13 @@ public class menuPrincipal {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        vehiculos Camry = new vehiculos("Camry",1992,"Toyota");
-        vehiculos Corolla = new vehiculos("Corolla",1966,"Toyota");
-        vehiculos Prius = new vehiculos("Prius",1997,"Toyota");
-        vehiculos Hilux = new vehiculos("Hilux",1968,"Toyota");
-        vehiculos Focus = new vehiculos("Focus",1998, "Ford");
-        vehiculos Mustang = new vehiculos("Mustang",1964,"Ford");
-        vehiculos Camaro = new vehiculos("Camaro",1966,"Chevrolet");
+        vehiculos Camry = new vehiculos(1,"Camry",1992,"Toyota");
+        vehiculos Corolla = new vehiculos(2,"Corolla",1966,"Toyota");
+        vehiculos Prius = new vehiculos(3,"Prius",1997,"Toyota");
+        vehiculos Hilux = new vehiculos(4,"Hilux",1968,"Toyota");
+        vehiculos Focus = new vehiculos(5,"Focus",1998, "Ford");
+        vehiculos Mustang = new vehiculos(6,"Mustang",1964,"Ford");
+        vehiculos Camaro = new vehiculos(7,"Camaro",1966,"Chevrolet");
         List<vehiculos> lista = new ArrayList<vehiculos>();
         lista.add(Camry);
         lista.add(Corolla);
@@ -36,14 +36,6 @@ public class menuPrincipal {
         lista.add(Focus);
         lista.add(Mustang);
         lista.add(Camaro);
-        int contador=1;
-        for (vehiculos info : lista){
-            System.out.println("El vechiculo #"+contador+"\n");
-            System.out.println("El modelo del vehiculo es: "+info.getModelo()+"\n");
-            System.out.println("El año en el que se produjo el vehiculo es: "+info.getAnio()+"\n");
-            System.out.println("La marca del vehiculo es: "+info.getMarca()+"\n");
-            contador+=1;
-        }
         String filePath="datos.dat";
         try (FileOutputStream fileOut=new FileOutputStream(filePath);
              ObjectOutputStream obOut=new ObjectOutputStream(fileOut);
