@@ -1,11 +1,13 @@
 public class vehiculos {
+    int numero;
     String modelo;
     int anio;
     String marca;
 
     public vehiculos(){}
 
-    public vehiculos(String modelo, int anio, String marca) {
+    public vehiculos(int numero, String modelo, int anio, String marca) {
+        this.numero=numero;
         this.modelo = modelo;
         this.anio = anio;
         this.marca = marca;}
@@ -21,4 +23,8 @@ public class vehiculos {
     public String getMarca() {return marca;}
 
     public void setMarca(String marca) {this.marca = marca;}
+
+    public int getNumero() {return numero;}
+
+    public void setNumero(int numero) {this.numero = numero;}
 }

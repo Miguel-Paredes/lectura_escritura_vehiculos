@@ -36,10 +36,15 @@ public class menuPrincipal {
         lista.add(Focus);
         lista.add(Mustang);
         lista.add(Camaro);
+        int contador=1;
         for (vehiculos info : lista){
-            System.out.println("El nombre del ");
+            System.out.println("El vechiculo #"+contador+"\n");
+            System.out.println("El modelo del vehiculo es: "+info.getModelo()+"\n");
+            System.out.println("El año en el que se produjo el vehiculo es: "+info.getAnio()+"\n");
+            System.out.println("La marca del vehiculo es: "+info.getMarca()+"\n");
+            contador+=1;
         }
-        /*String filePath="datos.dat";
+        String filePath="datos.dat";
         try (FileOutputStream fileOut=new FileOutputStream(filePath);
              ObjectOutputStream obOut=new ObjectOutputStream(fileOut);
         ) {
@@ -57,6 +62,6 @@ public class menuPrincipal {
             throw new RuntimeException(e);
         }catch (ClassNotFoundException e){
             throw new RuntimeException();
-        }*/
+        }
     }
 }
