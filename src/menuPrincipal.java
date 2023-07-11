@@ -36,6 +36,9 @@ public class menuPrincipal {
         lista.add(Focus);
         lista.add(Mustang);
         lista.add(Camaro);
+        for (vehiculos info : lista){
+            System.out.println("El nombre del ");
+        }
         /*String filePath="datos.dat";
         try (FileOutputStream fileOut=new FileOutputStream(filePath);
              ObjectOutputStream obOut=new ObjectOutputStream(fileOut);

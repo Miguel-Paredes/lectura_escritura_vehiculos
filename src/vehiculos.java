@@ -1,23 +1,24 @@
 public class vehiculos {
-    String nombre;
-    int anio;
     String modelo;
+    int anio;
+    String marca;
 
     public vehiculos(){}
-    public vehiculos(String nombre, int anio, String modelo) {
-        this.nombre = nombre;
+
+    public vehiculos(String modelo, int anio, String marca) {
+        this.modelo = modelo;
         this.anio = anio;
-        this.modelo = modelo;}
+        this.marca = marca;}
 
-    public String getNombre() {return nombre;}
+    public String getModelo() {return modelo;}
 
-    public void setNombre(String nombre) {this.nombre = nombre;}
+    public void setModelo(String modelo) {this.modelo = modelo;}
 
     public int getAnio() {return anio;}
 
     public void setAnio(int anio) {this.anio = anio;}
 
-    public String getModelo() {return modelo;}
+    public String getMarca() {return marca;}
 
-    public void setModelo(String modelo) {this.modelo = modelo;}
+    public void setMarca(String marca) {this.marca = marca;}
 }
